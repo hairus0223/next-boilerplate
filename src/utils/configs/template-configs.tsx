@@ -17,6 +17,7 @@
  */
 
 import { Layout, LayoutComponentPosition, LayoutComponentWidth, Mode, Skin } from '../models/core-model'
+import { BreakpointType } from '../models/menu-model'
 
 type Navbar = {
   type: LayoutComponentPosition
@@ -75,3 +76,17 @@ const TemplateConfig: Config = {
 }
 
 export default TemplateConfig
+
+export const defaultBreakpoints: Record<BreakpointType, string> = {
+  xs: '480px',
+  sm: '600px',
+  md: '900px',
+  lg: '1200px',
+  xl: '1536px',
+  xxl: '1920px',
+  always: 'always'
+}
+
+export const verticalNavToggleDuration = 300
+export const verticalSubMenuToggleDuration = 300
+export const horizontalSubMenuToggleDuration = 200
